@@ -5,6 +5,7 @@
 * {
     font-family: 'Lora', serif;
 }
+
 .banner-img {
     width: 100%;
     height: auto;
@@ -21,7 +22,8 @@ html {
     font-size: 1em;
     line-height: 1.4;
     box-sizing: border-box;
-    background-color: burlywood;
+    text-align: justify;
+    
   }
   
 
@@ -39,14 +41,17 @@ html {
       position: relative;
   }
   p.overlay-text {
-      position:absolute; top:10px; left:20px;
+      position:absolute; bottom:10px; right:20px;
+  }
+  .overlay-text {
+      font-size: 4rem;
+      color: white;
+      margin-right: 40px;
   }
 
- /* .col {
-    background-color: #927777;
-    border: solid black;
-
- } */
+  .banner-img {
+    border-radius: 1%;
+  }
 
 /* ================================= 
   Base Layout Styles
@@ -74,7 +79,53 @@ html {
     list-style-type: none;
  }
 
+ .links {
+  list-style-type: none;
+ }
+
  /* ---- Layout Containers ---- */
+ .main-flex {
+  display: flex;
+
+}
+ .col {
+    padding-left:  40px;
+    padding-right: 40px;  
+    background-color: #D47500;
+    border: #D47500 solid;
+    border-radius: 1%;
+    margin-top: 20px;
+    box-shadow: black 50px;
+    
+}
+.col:nth-child(2) {
+  margin-left: 25px;
+  text-align: left;
+}
+.footer-flex {
+  display: inline-flex
+}
+
+form {
+  margin: 20px;
+  max-width: 768px;
+  text-align: right;
+}
+label, input {
+  display: inline-block;
+  margin-left: 30px;
+  
+}
+ .sign-up {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: solid teal;
+    background-color: teal;
+    border-radius: 1%;
+    
+
+ }
 
   /* ================================= 
   Media Queries
