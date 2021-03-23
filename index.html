@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Blog Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body style="background-color: antiquewhite;">
 
-     <header class= "main-header">
-       <!--<h1 class="title"><a href="#">Blog Title</a></h1>-->
+    <header class="main-header">
+        <!--<h1 class="title"><a href="#">Blog Title</a></h1>-->
         <ul class="main-nav">
             <li><a href="#">About Me</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </header> <!--main header-->
+    </header>
+    <!--main header-->
     <div class="banner">
-        <img class="banner-img" src="placeimg_768_360_nature.jpg" alt="fall leaves on a tree"> 
+        <img class="banner-img" src="placeimg_768_360_nature.jpg" alt="fall leaves on a tree">
         <p class="overlay-text">Blog Title</p>
-    </div>  
-</div> 
-<section class="main-flex">
-    <div class="col">
-                <h2>About Me</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-    </div> <!--primary-->
-        <div class="col">
-                <h2>Recent Posts</h2>
-                <ul class="recent-posts">
-                    <li><a href="#">January 2021 Blog Post</a></li>
-                    <li><a href="#">February 2021 Blog Post</a></li>
-                    <li><a href="#">March 2021 Blog Post</a></li>
-                </ul>    
-        </div> <!--secondary-->
-</section> 
-         
-<section class="sign-up">
-    <div id="error" class="form-group"></div>
-    <form id="form">
-     
-         <label for="name">
-         <input type="text" id="name" name="name" placeholder="Your Name"> 
-        </label>
-
-         <label for="email">
-         <input type="email" id="mail" name="email" placeholder="Your Email Address">
-        </label>
+    </div>
+    </div>
+    <section class="main-flex">
+        <div class="flex-wrap">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
+                Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper
+                consequat est, eu porta velit mollis nec.</p>
+        </div>
         
-        <label>
-         <button type="submit">Subscribe</button>
-        </label> 
-    </form>
-</section>                
-               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-            </section>
-            <footer>
-                <h3>Goodbye</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-            </footer>
-        </article>
+        <div class="flex-wrap">
+            <img class="img-flex" src="placeimg_640_480_sepia_nature.jpg" alt="fir trees and mountain with sun shining through"> 
+        </div>
 
-        <aside>
-            <h3>What's this</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-        </aside>  -->
-    
+        <div class="flex-wrap">
+            <h2>Recent Posts</h2>
+            <ul class="recent-posts">
+                <li><a href="#">January 2021 Blog Post</a></li>
+                <li><a href="#">February 2021 Blog Post</a></li>
+                <li><a href="#">March 2021 Blog Post</a></li>
+            </ul>
+        </div>
+        
+        <div class="flex-wrap">
+            <h2>What's New This Week</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. 
+                Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+        </div>
+       
+    </section>
+
+    <section class="sign-up">
+        <div></div>
+        <form id="form">
+            
+            <label for="name">
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </label>
+            
+            
+            <label for="email">
+                <input type="email" id="email" name="email" placeholder="Your Email Address">
+            </label>
+            
+            
+            <label>
+                <button onclick="emailIsValid()" type="submit">Subscribe</button>
+            </label>
+            
+        </form>
+    </section>
+ 
 
 
-<div class="footer-container"></div>
+
+    <div class="footer-container"></div>
     <footer class="wrapper">
 
         <h3>Let's Stay in Touch</h3>
 
         <section class="footer-flex">
-           <div class="links"></div>
+            <div class="links"></div>
             <ul class="links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>     
-          </div>
+            </ul>
+            </div>
             <div class="links">
-            <ul class=links>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>   
-        </div>      
+                <ul class=links>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
         </section>
-           
-    
-    </footer>    
-    <script src="script.js"></script> 
+
+
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
