@@ -1,4 +1,4 @@
-# January-2021-FEWD
+# personal_blog_Cradled
 This is my final project for Code Louisville Front End Web Development course. My project is a blog site that I intend to use for personal writing of my experiences going through traumatic injury and learning to live life in a disabled body. 
 Presently the site is one page with dummy links to external websites as well as secondary and tertiary pages that will be completed in the future.  
 
