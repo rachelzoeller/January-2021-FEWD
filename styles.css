@@ -23,10 +23,15 @@ html {
     line-height: 1.4;
     box-sizing: border-box;
     text-align: justify;
-    font-weight: 900;
-    
+    font-weight: 900; 
   }
   
+  h3 {
+    color: #000;
+    margin-left: 20px;
+
+  }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -85,7 +90,6 @@ html {
 .main-nav a:hover {
 	color: #436E43;
 }
- 
 
 .recent-posts {
     list-style-type: none;
@@ -112,12 +116,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 10px;
 
 
 }
  .flex-wrap {  
-    padding-left:  40px;
-    padding-right: 40px;  
+    padding-left:  10px;
+    padding-right: 10px;  
+    padding-bottom: 20px;
     background-color: none;
     border-bottom: lightgray solid;
     border-radius: 0%;
@@ -137,11 +143,13 @@ html {
 
 form {
   margin: 20px;
-  max-width: 768px;
+  max-width: 768px; 
   text-align: right;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
+  
 }
 
 label, input {
@@ -185,14 +193,14 @@ button:hover {
   Media Queries
 ==================================== */
  
-   @media (max-width: 600px) {
+   @media only screen and (max-width: 600px) {
       .main-flex {
         flex-direction: column;
         align-items: center;
         
       } 
     }
-    @media (min-width: 769px) {
+    @media only screen and (min-width: 769px) {
   
         .main-header, 
         .main-nav,
@@ -209,7 +217,7 @@ button:hover {
            margin-left: 1px;
         }
        
-        @media (min-width: 1025px) {
+        @media only screen and (min-width: 1025px) {
         
         .main-header {
          flex-direction:row;

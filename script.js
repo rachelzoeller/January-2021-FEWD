@@ -14,14 +14,14 @@
       var name = nameInputElement.value;
     
     // Validate value against the rule
-    
+
       var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       var validateResult = regex.test(email);
 
     // If valid prompt successful message / Else prompt validation error message 
     //concantenate or add name value to message - join name to message
       if (validateResult === true ) { 
-        alert("Thanks," + " " + name + " " + "for signing up!");
+        alert("Thanks" + " " + name + " " + "for signing up!");
       }
       else {
         alert("Please enter a valid email address")
