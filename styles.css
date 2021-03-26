@@ -63,10 +63,9 @@ html {
 
   .img-flex {
     border-radius: .5%;
-    max-width: 95%;
-    min-width: 75%;
-    align-items: center;
-
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .copyright {
@@ -200,7 +199,7 @@ button:hover {
   Media Queries
 ==================================== */
  
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 769px) {
       .main-flex {
         flex-direction: column;
         align-items: center;
