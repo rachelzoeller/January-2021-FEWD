@@ -1,6 +1,6 @@
 # personal_blog_Cradled
 This is my final project for Code Louisville Front End Web Development course. My project is a blog site that I intend to use for personal writing of my experiences going through traumatic injury and learning to live life in a disabled body. 
-Presently the site is one page with dummy links to external websites as well as secondary and tertiary pages that will be completed in the future.  
+Presently the site is one page with working links to my LinkedIn, Twitter and Github pages, as well as dummy links to secondary and tertiary pages that will be completed in the future.  
 
 This site uses the following features:
 - Navigation menu in a flexbox that moves from horizontal to vertical at breakpoints to accomodate both mobile and desktop views. 
