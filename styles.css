@@ -149,13 +149,11 @@ html {
 
 form {
   margin: 20px;
-  max-width: 768px; 
+  width: 100%; 
   text-align: right;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  
-  
+  justify-content: space-evenly;
 }
 
 label, input {
@@ -164,15 +162,17 @@ label, input {
   font-size: 20px;
   text-align: left;
   color: #333;  
+  border-radius: 5px;
 } 
 
 button {
   padding: 5px;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: .5%;
   cursor: pointer;
   background: lightgray;
   border: 1px solid darkgrey;
+  border-radius: 3px;
   color: #333;
   transition: all .5s; 
 }
@@ -190,15 +190,27 @@ button:hover {
     border: solid #436E43;
     background-color: #436E43;
     border-radius: 1%;
-    display: flex;
+    display: flex; 
     justify-content: center;
-
  }
 
   /* ================================= 
   Media Queries
 ==================================== */
  
+  @media only screen and (max-width: 600px) {
+    form {
+      display: flex;
+      flex-direction: column;
+      padding-right: 40px;
+
+    }
+
+    button {
+      max-width: 50%;
+    }
+  }
+
    @media only screen and (max-width: 769px) {
       .main-flex {
         flex-direction: column;
@@ -215,7 +227,7 @@ button:hover {
           display: flex;
           flex-wrap: wrap;
           } 
-        }
+        
         .main-header {
           flex-direction:column;
           align-items:flex-end;
@@ -223,7 +235,7 @@ button:hover {
         .main-nav {
            margin-left: 1px;
         }
-       
+      }
         @media only screen and (min-width: 1025px) {
         
         .main-header {
