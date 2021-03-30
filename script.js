@@ -30,18 +30,3 @@
       
    }
 
-
-// /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/; 
-//  const form = document.querySelector('form');
-//   const nameInput = document.querySelector(
-//     'input[name="name"]'
-//   );
-  
-//   console.log(nameInput);
-  
-//    form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     console.log('test');
-
-//   })
-

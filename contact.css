@@ -1,0 +1,183 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    font-family: 'Lora', serif;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+
+  h1{
+    color: white;  
+    font-size: 4em;
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    color: #000;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+    text-align: justify;
+    font-weight: 900; 
+  }
+  
+  h3 {
+    color: #000;
+    margin-left: 20px;
+
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    
+  }
+
+   footer {
+    margin-top: 100px;
+
+   }
+  .copyright {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #b5b5b5;
+  }
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+  .main-nav {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    color: #333;
+  }
+  .main-nav a {
+	text-align: center;
+	display: block;
+  padding: 10px 10px;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.main-nav a:hover {
+	color: white;
+}
+.formdiv {
+    place-items: center;
+}
+form {
+    margin-top: 40px;
+    width: 50%; 
+    /* place-items: center; */
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+label, input {
+    display: inline-flex;
+    margin-left: 0px; 
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    color: #333;  
+    border-radius: 3px;
+  } 
+  
+  .message {
+    ;
+
+  }
+  button {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: .5%;
+    cursor: pointer;
+    background: lightgray;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    color: #333;
+    transition: all .5s; 
+  }
+  
+  button:hover {
+    background-color: #5C97BF;
+    border: black;
+    color: white;
+  }
+
+ .links {
+  list-style-type: none;
+  
+ }
+ .links a {
+    color: #2b2b2b;
+    text-decoration: none;
+ }
+
+ /* ---- Layout Containers ---- */
+
+.footer-flex {
+  display: inline-flex 
+}
+
+.footer-flex a:hover {
+  color: #436E43;
+}
+
+
+
+  /* ================================= 
+  Media Queries
+==================================== */
+ 
+@media only screen and (max-width: 600px) {}
+
+
+   @media only screen and (max-width: 769px) {}
+   
+    @media only screen and (min-width: 769px) {
+  
+        .main-header, 
+        .main-nav,
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          } 
+        
+        .main-header {
+          flex-direction:column;
+          align-items:flex-end;
+        }
+        .main-nav {
+           margin-left: 1px;
+        }
+      }
+        @media only screen and (min-width: 1025px) {
+        
+        .main-header {
+         flex-direction:row;
+          justify-content:flex-end;
+        }
+       
+        }
