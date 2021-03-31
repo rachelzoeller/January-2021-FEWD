@@ -120,6 +120,8 @@ html {
  /* ---- Layout Containers ---- */
  .main-flex {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 10px;
@@ -154,6 +156,9 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-direction: column;
+  padding-right: 40px;
+
 }
 
 label, input {
@@ -198,26 +203,26 @@ button:hover {
   Media Queries
 ==================================== */
  
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     form {
       display: flex;
       flex-direction: column;
       padding-right: 40px;
-    }
+    } 
 
     button {
       max-width: 50%; 
     }
-  }
+   } */ 
 
-   @media only screen and (max-width: 769px) {
+   /* @media only screen and (max-width: 769px) {
       .main-flex {
         flex-direction: column;
         align-items: center;
         width: 100%;
         
       } 
-    }
+    } */
     @media only screen and (min-width: 769px) {
   
         .main-header, 
@@ -234,14 +239,34 @@ button:hover {
         .main-nav {
            margin-left: 1px;
         }
-      }
-        @media only screen and (min-width: 1025px) {
-        
-        .main-header {
-         flex-direction:row;
-          justify-content:flex-end;
+        form {
+          flex-direction: row;
         }
-       
+        .main-flex {
+          flex-direction: row;
+          align-items: stretch;
+        }
+      }
+        @media only screen and (min-width: 1200px) {
+        
+        .main-flex {
+          flex-wrap: nowrap;
+           
+        }  
+        /* .flex-wrap:nth-of-type(2) {
+          flex-grow: 2;
+        } */
+        .flex-wrap {
+          flex: 1;
+        }
+        .flex-wrap:nth-child(1),
+        .flex-wrap:nth-child(2) {
+          flex: 2;
+        }
+        
+        .flex-wrap:nth-child(4) {
+          display: hidden;
+        }
         }
 
         
